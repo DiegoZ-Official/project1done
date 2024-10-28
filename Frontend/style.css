@@ -1,0 +1,109 @@
+/* Container styling */
+.salary-range-container {
+    display: flex;
+    align-items: center; /* Aligns children (label, sliders, span) vertically */
+    width: 100%;
+}
+
+/* Label styling */
+.salary-range-container label {
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin-right: 10px; /* Adds some space between the label and the sliders */
+}
+
+.salary-range-container span {
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin-left: 10px; /* Adds some space after the sliders */
+}
+
+/* General styling for range sliders */
+input[type="range"] {
+    width: 5%; /* Width of each slider */
+    margin: 0 5px; /* Space between the two sliders */
+}
+
+/* Styling for slider thumbs (handles) to make them easier to interact with */
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #0f62fe;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0f62fe;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0f62fe;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+/* Optional: Additional styles for enhanced visual appearance */
+body {
+    font-family: Arial, sans-serif; /* Sets a nice typeface */
+    line-height: 1.6; /* Increases line height for readability */
+    padding: 20px; /* Adds padding to the body for some breathing room */
+}
+
+table {
+    width: 100%; /* Full width tables */
+    border-collapse: collapse; /* Removes space between borders */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Light grey border for table cells */
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+}
+
+button {
+    background-color: #0f62fe; /* Blue background color for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #0053ba; /* Darker blue on hover */
+}
+
+input[type="number"] {
+    width: 150px; 
+    padding: 8px;  
+    margin-right: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+input[type="date"] {
+    width: 180px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+[contenteditable="true"] {
+    background-color: #f3f3f3;
+    border: 2px dashed #007bff;
+    padding: 5px;
+}
+
+[contenteditable="false"] {
+    background-color: transparent;
+    border: none;
+}
